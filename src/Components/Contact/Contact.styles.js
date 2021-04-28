@@ -161,18 +161,19 @@ export const Inner = styled.div`
 `
 
 export const FormContainer = styled.div`
-    max-width: 300px;
-    display: grid;
+    max-width: 390px;
+    /* display: grid; */
     height: 400px;
     justify-content: center;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     /* align-items: center; */
 `
 
 export const FormC = styled.form`
     display: grid;
+    width: 100%;
     font-family: inherit;
-    padding: 10px 10px 10px 10px;
+    /* margin: 10px 10px 10px 10px; */
     font-size: 1.1rem;
     color: #151515;
     /* height: 300px; */
@@ -181,18 +182,13 @@ export const FormC = styled.form`
     }
     
 `
-export const FirstInput = styled.div`
-    width: 100%;
-    margin-bottom: -10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-`
+
 export const NameInput = styled.input`
-    margin: 0 10px 10px 0;
+    margin-bottom: 10px;
     font-family: inherit;
     border: 1px solid #ff0b56;
     height: 50px;
+    width: 100%;
     background: #171717;
     border-radius: 5px;
     color: #b2b2b2;
@@ -205,7 +201,8 @@ export const NameInput = styled.input`
 
 export const EmailInput = styled.input`
     border-radius: 5px;
-
+    margin-bottom: 10px;
+    width: 100%;
     height: 50px;
     background: #171717;
     font-family: inherit;
@@ -216,11 +213,12 @@ export const EmailInput = styled.input`
 `
 export const SubjectInput = styled.input`
     border: 1px solid #ff0b56;
+    margin-bottom: 10px;
      height: 50px;
          border-radius: 5px;
 
     font-family: inherit;
-     width: 98%;
+     width: 100%;
      color: #b2b2b2;
      background: #171717;
      &:focus{
@@ -231,10 +229,11 @@ export const SubjectInput = styled.input`
 
 export const TextArea = styled.textarea`
     resize: none;
+    width: 100%;
     font-family: inherit;
     border: 1px solid #ff0b56;
-    padding-left: 10px;
     min-height: 100px;
+    margin-bottom: 10px;
         border-radius: 5px;
 
     color: #b2b2b2;
@@ -247,13 +246,12 @@ export const SubmitBtn = styled.input`
     border: none;
     background: #171717;
     color: #ff0b56;
-        border-radius: 5px;
-
+    border-radius: 5px;
     border: 1px solid #ff0b56;
     position: relative;
     font-family: inherit;
     width: 150px;
-    left: 11rem;
+    height: 50px;
     transition: .3s all ease-in;
     &:hover {
         color: black;

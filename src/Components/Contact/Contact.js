@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Container, Wrapper, TextWrapper, Heading, Subtitle, Column1, Column2, Row} from './Contact.styles'
-import { SocialIconLink1, Icon, Inner, FormC, FormContainer, NameInput, EmailInput, FirstInput,SubjectInput,TextArea, SubmitBtn} from './Contact.styles'
+import { SocialIconLink1, Icon, Inner, FormC, FormContainer, NameInput, EmailInput, SubjectInput,TextArea, SubmitBtn} from './Contact.styles'
 import {FaFacebook, FaInstagram, FaYoutube, FaGithub, FaTwitter} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
 import isEmpty from 'validator/lib/isEmpty';
@@ -144,10 +144,10 @@ const Contact = () => {
                         
                          <FormContainer>
                             <FormC id="myform"onSubmit={handleSubmit} noValidate >
-                                <FirstInput >
+                                
                                     <NameInput type="text" placeholder="Name" name="name" value={name} onChange={handleChange}/>
                                     <EmailInput  type="email" placeholder="Email" name="email" value={email} onChange={handleChange}/>
-                                </FirstInput>
+                              
                                 <SubjectInput  type="text" placeholder="Subject" name="subject" value={subject} onChange={handleChange}/>
                                 <TextArea placeholder="Type something..." name="message" value={message} onChange={handleChange}></TextArea>
                                 <SubmitBtn type="submit" value="Send Message"></SubmitBtn>
