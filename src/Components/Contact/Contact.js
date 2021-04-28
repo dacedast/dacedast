@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {Container, Wrapper, TextWrapper, Heading, Subtitle, Column1, Column2, Row} from './Contact.styles'
 import { SocialIconLink1, Icon, Inner, FormC, FormContainer, NameInput, EmailInput, FirstInput,SubjectInput,TextArea, SubmitBtn} from './Contact.styles'
 import {FaFacebook, FaInstagram, FaYoutube, FaGithub, FaTwitter} from 'react-icons/fa'

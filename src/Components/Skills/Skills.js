@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import {Container, Wrapper, TextWrapper, Heading, Subtitle,Column1, Column2, Row} from './Skills.styles'
 import './Skills.css'
 // import Aos from 'aos'

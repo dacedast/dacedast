@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import {Container, Wrapper, TextWrapper, Heading, Subtitle, BtnInfo, BtnWrap, Column1, Column2, Row} from './About.styles'
 import {TiArrowSortedDown} from 'react-icons/ti'
 import "./About.css"
