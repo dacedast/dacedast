@@ -159,7 +159,6 @@ const Home = () => {
                                 </BtnInfo2>
                                  
                             </BtnWrap>
-                           
                         </TextWrapper>
            
             </Wrapper>

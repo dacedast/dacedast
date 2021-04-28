@@ -29,7 +29,7 @@ const About = () => {
                 <TextWrapper  data-aos="fade-in" data-aos-delay="500">
                     <Heading 
                         
-                    >Me & my passion</Heading>
+                    >Me & My Passion</Heading>
                     <Subtitle  data-aos="flip-right" data-aos-delay="500">I'm a web developer located in Kyrgyzstan. My job is to create dynamic user experiences. Well organized person, problem solver and creative UI builder with high attention to details.
                         Also fan of Golden State Warriors, Elon Musk and love anime.
                         <br />
