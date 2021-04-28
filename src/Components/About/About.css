@@ -1,0 +1,39 @@
+.bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #08fdd8b3;
+}
+li {
+  list-style: none;
+}
+li h3 {
+  color: white;
+  font-size: 1rem;
+}
+.bar span {
+  height: 2px;
+  float: left;
+  background: #08fdd8;
+}
+.hardwork {
+  width: 80%;
+}
+.attitude {
+  width: 92%;
+}
+.comm {
+  width: 70%;
+}
+.task {
+  width: 79%;
+}
+.learn {
+  width: 98%;
+}
+.thinking {
+  width: 90%;
+}

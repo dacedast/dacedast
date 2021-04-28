@@ -1,0 +1,31 @@
+@media screen and (max-width: 1280px) {
+  .app-cursor,
+  .secondary-cursor {
+    display: none;
+  }
+}
+
+.secondary-cursor {
+  z-index: 1000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+}
+
+.app-cursor {
+  z-index: 1000;
+  background: white;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+}
