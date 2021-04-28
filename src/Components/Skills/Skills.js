@@ -10,17 +10,17 @@ const Skills = () => {
     // useEffect(() => {
     //     Aos.init({duration: 1100, easing: 'ease-in-quad'});
     // },[])
-    const fadingOut = {
-        hidden: {opacity: 0, x: '-100vw', scale: 0.1},
-        visible: {opacity: 1, x: 0, scale: 1}
-    }
+    // const fadingOut = {
+    //     hidden: {opacity: 0, x: '-100vw', scale: 0.1},
+    //     visible: {opacity: 1, x: 0, scale: 1}
+    // }
     
     return (
         <Container
-            variants={fadingOut}
-            initial='hidden'
-            animate='visible'
-            transition={{ duration: 1.3 }}
+            // variants={fadingOut}
+            // initial='hidden'
+            // animate='visible'
+            // transition={{ duration: 1.3 }}
         >
           <Wrapper>
               <Row>
