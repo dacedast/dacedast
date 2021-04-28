@@ -73,7 +73,7 @@ export const Row = styled.div`
     }
 `
 export const Column1 = styled.div`
-    max-width: 500px;
+    max-width: 400px;
     grid-area: col1;
     display:grid;
     grid-template-columns: 50% 50%;
@@ -88,7 +88,7 @@ export const Column2 = styled.div`
     }
     /* margin-top: -60%; */
     grid-area: col2;
-    max-width: 700px;
+    max-width: 500px;
     display:grid;
 `
 
