@@ -1,15 +1,15 @@
 import React, {useEffect} from 'react'
 import {Container, Wrapper, TextWrapper, Heading, Subtitle,Column1, Column2, Row} from './Skills.styles'
 import './Skills.css'
-import Aos from 'aos'
-import "aos/dist/aos.css"
+// import Aos from 'aos'
+// import "aos/dist/aos.css"
 
 
 
 const Skills = () => {
-    useEffect(() => {
-        Aos.init({duration: 1100, easing: 'ease-in-quad'});
-    },[])
+    // useEffect(() => {
+    //     Aos.init({duration: 1100, easing: 'ease-in-quad'});
+    // },[])
     const fadingOut = {
         hidden: {opacity: 0, x: '-100vw', scale: 0.1},
         visible: {opacity: 1, x: 0, scale: 1}
@@ -24,7 +24,7 @@ const Skills = () => {
         >
           <Wrapper>
               <Row>
-                  <Column1 data-aos="zoom-out" data-aos-delay="400">
+                  <Column1 >
                     <div className="main-card">
                         HTML, CSS, JS, SASS, BOOTSTRAP
                     <div className="up-card">
@@ -63,7 +63,7 @@ const Skills = () => {
                     </div>
                    
                   </Column1>
-                  <Column2 data-aos="fade" data-aos-delay="600">
+                  <Column2 >
                   <TextWrapper>
                         <Heading>
                             Skills & Experience

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Container, Wrapper, TextWrapper, Heading, Subtitle, Column1, Column2, Row} from './Contact.styles'
-import { SocialIconLink1, Icon, Inner, FormContainer, FormC, FirstInput,NameInput, SubjectInput, SubmitBtn, EmailInput,TextArea} from './Contact.styles'
+import { SocialIconLink1, Icon, Inner, FormC, FormContainer, NameInput, EmailInput, FirstInput,SubjectInput,TextArea, SubmitBtn} from './Contact.styles'
 import {FaFacebook, FaInstagram, FaYoutube, FaGithub, FaTwitter} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
 import isEmpty from 'validator/lib/isEmpty';
@@ -9,8 +9,8 @@ import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './Contact.css'
 import emailjs from 'emailjs-com';
-import Aos from 'aos'
-import "aos/dist/aos.css"
+// import Aos from 'aos'
+// import "aos/dist/aos.css"
 
 
 toast.configure()
@@ -19,9 +19,9 @@ const Contact = () => {
         hidden: {opacity: 0, scale: 0},
         visible: {opacity: 1, scale: 1}
     }
-    useEffect(() => {
-        Aos.init({duration: 1100, delay: 100, easing: 'ease-in-out-cubic'});
-    },[])
+    // useEffect(() => {
+    //     Aos.init({duration: 1100, delay: 100, easing: 'ease-in-out-cubic'});
+    // },[])
     
     const notify = () => {
         toast.error('All fields are required!', {
@@ -97,17 +97,17 @@ const Contact = () => {
                 <Row>
                     <Column1 >
                         <TextWrapper>
-                            <Heading data-aos="fade-in" data-aos-delay="1000">
+                            <Heading >
                                 Contact Me
                             </Heading>
-                            <Subtitle data-aos="fade-in" data-aos-delay="1500">I'm interested in freelance opportunities - especially ambitious and interesting projects. However, if you have other request or question, don't hesitate to use the form.
+                            <Subtitle>I'm interested in freelance opportunities - especially ambitious and interesting projects. However, if you have other request or question, don't hesitate to use the form.
                             <br />
                             <br />
                             You can find me on social media:
 
                             </Subtitle>
                         </TextWrapper>
-                        <Inner data-aos="fade-in" data-aos-delay="1800">
+                        <Inner >
                         <SocialIconLink1 href="http://facebook.com/" target="_blank" aria-label="Facebook" >
                             <Icon>
                             <FaFacebook style={{fontSize:'30px', lineHeight:'60px'}}></FaFacebook>
@@ -141,8 +141,9 @@ const Contact = () => {
                         </Inner>
                     </Column1>
                     <Column2>
-                        <FormContainer>
-                            <FormC id="myform"onSubmit={handleSubmit} noValidate data-aos="fade-down-left" data-aos-delay="100">
+                        
+                         <FormContainer>
+                            <FormC id="myform"onSubmit={handleSubmit} noValidate >
                                 <FirstInput >
                                     <NameInput type="text" placeholder="Name" name="name" value={name} onChange={handleChange}/>
                                     <EmailInput  type="email" placeholder="Email" name="email" value={email} onChange={handleChange}/>
